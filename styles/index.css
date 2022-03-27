@@ -38,7 +38,23 @@ section {
 }
 .dice-div {
   background-color: black;
-  padding: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.dice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 5px;
+  color: black;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
 }
 h1 {
   font-size: 2rem;
