@@ -11,7 +11,7 @@ const characterData = {
         elementId: "monster",
         name: "Orc",
         avatar: "images/orc.png",
-        life: 10,
+        life: 60,
         diceCount: 1,
         currentDiceScore: []
     }

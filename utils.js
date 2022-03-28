@@ -18,4 +18,4 @@ function calculateTotal(arr){
 function calculateLifePercentage(remaining,total){
     return (100 * remaining) / total
 }
-export {generateRandom, getDicePlaceholder, calculateTotal}
+export {generateRandom, getDicePlaceholder, calculateTotal,calculateLifePercentage}

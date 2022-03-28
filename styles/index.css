@@ -72,6 +72,19 @@ h2 {
 h3 {
   font-size: 1.65rem;
 }
+.health-bar-outer,
+.health-bar-inner {
+  width: 100%;
+  border-radius: 5px;
+}
+.health-bar-inner {
+  background-color: green;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.health-bar-inner.danger {
+  background-color: red;
+}
 #attack-btn {
   font-family: "MedievalSharp", cursive;
   font-weight: bold;
