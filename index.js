@@ -22,6 +22,8 @@ function endGame() {
 function attack(){
     wizard.diceArrayHtml()
     monstor.diceArrayHtml()
+    wizard.takeDamage(monstor.currentDiceScore)
+    monstor.takeDamage(wizard.currentDiceScore)
     render()
     if(wizard.dead || monstor.dead){
         endGame()

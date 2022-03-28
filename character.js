@@ -11,12 +11,15 @@ function Character(data){
         this.diceArray = this.currentDiceScore.map((value) => {
             return `<div class="dice-container">${value}</div>`
         }).join('')
-        this.life -= calculateTotal(this.currentDiceScore)
+    }
+
+    this.takeDamage = function(opponentArray){
+        this.life -= calculateTotal(opponentArray)
         if(this.life <=0){
             this.life = 0
             this.dead = true
         }
-       }
+    }
     
     this.getCharacterHtml = function(){
         const {elementId, name, avatar, life,diceCount, diceArray} = this
