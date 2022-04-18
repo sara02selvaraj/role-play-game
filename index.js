@@ -2,6 +2,7 @@ import characterData from "./data.js";
 import { Character } from "./character.js";
 
 const attackBtn = document.getElementById('attack-btn')
+let monstersArray = ['monstor', 'demon', 'goblin']
 
 attackBtn.addEventListener('click', attack)
 
@@ -17,6 +18,10 @@ function endGame() {
         <h3>${endMessage}</h3>
         <p class="end-emoji">${endEmoji}</p>
     </div>` 
+}
+function getNewMonster() {
+    const nextMonsterData = characterData[monstersArray.shift()]
+    return nextMonsterData ? new Character(nextMonsterData) : {}
 }
 
 function attack(){
