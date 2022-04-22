@@ -36,7 +36,7 @@ function Character(data){
         return `
         <h1>${name}</h1>
         <img class="character-img" src=${avatar} alt="">
-        <h3>Life : </h3>
+        <h3>Life :${life} </h3>
         ${lifePercentHtml}
         <div class="dice-div">
            ${diceArray}
