@@ -1,13 +1,27 @@
+:root {
+  --ff-primary: "MedievalSharp", cursive;
+  --fs-h1: 2rem;
+  --fs-h2: 1.85rem;
+  --fs-h3: 1.65rem;
+  --fs-bold: 1.75rem;
+  --fs-body: 1.125rem;
+  --clr-primary: #1c1c1c;
+  --clr-body: #231d24;
+  --clr-success: green;
+  --clr-danger: red;
+}
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "MedievalSharp", cursive;
+  font-family: var(--ff-primary);
   background: rgb(51, 43, 55);
   color: white;
-  font-size: 1.125rem;
+  font-size: var(--fs-body);
   text-align: center;
 }
 section {
@@ -18,10 +32,10 @@ section {
   flex-direction: column;
 }
 .container {
-  background: #231d24;
+  background: var(--clr-body);
   padding: 5px 0;
   margin: 20px 0;
-  border: 2px solid black;
+  border: 2px solid var(--clr-primary);
   border-radius: 10px;
   padding-bottom: 0;
   box-shadow: inset 0px 0px 6px 2px rgba(100, 100, 100, 0.2),
@@ -37,7 +51,7 @@ section {
     0px 0px 10px rgba(130, 176, 199, 0.2);
 }
 .dice-div {
-  background-color: black;
+  background-color: var(--clr-primary);
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -46,12 +60,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.75rem;
+  font-size: var(--fs-bold);
   font-weight: bold;
   text-align: center;
   background-color: aliceblue;
   border-radius: 5px;
-  color: black;
+  color: var(--clr-primary);
   width: 40px;
   height: 40px;
   margin: 0 5px;
@@ -64,13 +78,13 @@ section {
   margin: 0 5px;
 }
 h1 {
-  font-size: 2rem;
+  font-size: var(--fs-h1);
 }
 h2 {
-  font-size: 1.85rem;
+  font-size: var(--fs-h2);
 }
 h3 {
-  font-size: 1.65rem;
+  font-size: var(--fs-h3);
 }
 .health-bar-outer,
 .health-bar-inner {
@@ -78,17 +92,17 @@ h3 {
   border-radius: 5px;
 }
 .health-bar-inner {
-  background-color: green;
+  background-color: var(--clr-success);
   padding: 5px;
   margin-bottom: 10px;
 }
 .health-bar-inner.danger {
-  background-color: red;
+  background-color: var(--clr-danger);
 }
 #attack-btn {
-  font-family: "MedievalSharp", cursive;
+  font-family: var(--ff-primary);
   font-weight: bold;
-  font-size: 1.75rem;
+  font-size: var(--fs-bold);
   margin: 0 auto;
   background-color: #fcc02a;
   border: none;
@@ -100,6 +114,7 @@ h3 {
 .end-emoji {
   font-size: 2.5rem;
 }
+
 @media (min-width: 700px) {
   section {
     display: flex;
